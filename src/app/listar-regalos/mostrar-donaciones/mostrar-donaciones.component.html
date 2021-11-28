@@ -1,0 +1,14 @@
+<div class="anonimas" *ngIf = "donacionesAnonimas.length > 0">
+    <h2>Lista de Donaciones Anónimas: </h2>
+    <li *ngFor="let donacion of donacionesAnonimas">
+        {{donacion.nombre}} 
+    </li>
+</div>
+
+
+<div class="noAnonimas" *ngIf = "donacionesNoAnonimas.length > 0">
+    <h2>Lista de Donaciones No Anónimas: </h2>
+    <li *ngFor="let donacion of donacionesNoAnonimas">
+        {{donacion.nombre}} --- {{donacion.autor}}
+    </li>
+</div>

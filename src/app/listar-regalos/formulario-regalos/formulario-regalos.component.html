@@ -1,0 +1,26 @@
+<h2> Realizar donación </h2>
+    <hr>
+    <form (ngSubmit) = "anadir()">
+        <div class="columna">
+            <label for="nombre">
+                Producto donado: 
+                <input type="text" id="nombre" name="nombre" placeholder="Introduzca su donación" [(ngModel)] = "donacion.nombre">
+            </label>
+        </div>
+        <div class="fila">
+            <label for="anonimo">
+                Donacion Anónima:
+                <label for="anonimoSi"> <input type="radio" id="anonimoSi" name="anonimo" value="si" checked [(ngModel)] = "donacion.anonimo">Si</label>
+                <label for="anonimoNo"> <input type="radio" id="anonimoNo" name="anonimo" value="no" [(ngModel)] = "donacion.anonimo"> No</label>
+            </label>
+        </div>
+        <div class="columna">
+            <label for="autor" *ngIf="donacion.anonimo == 'no' ">
+                Nombre del Donante: 
+                <input type="text" id="autor" name="autor" placeholder="Introduzca su nombre" [(ngModel)] = "donacion.autor">
+            </label>
+        </div>
+        <div class="columna">
+            <button type="submit"> Donar </button>
+        </div>
+    </form>

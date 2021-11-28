@@ -1,0 +1,35 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    text-transform: uppercase;
+}
+.columna{ 
+    display: block; 
+    margin: 1em;
+}
+.fila{
+    margin: 1em;
+}
+
+button {
+	width: 80px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+    text-transform: uppercase;
+	background: rgb(218, 191, 105);
+	border: 2px solid black;
+	box-shadow: 2px 2px 0 black,
+		-2px -2px 0 black,
+		-2px 2px 0 black,
+		2px -2px 0 black;
+	transition: 500ms ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background: rgb(125, 182, 99);
+	box-shadow: 7px 3px 0 black, -7px -3px 0 black;
+}

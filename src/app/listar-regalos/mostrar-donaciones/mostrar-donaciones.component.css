@@ -1,0 +1,11 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+input{
+    display: block;
+    margin: 1em;
+}
+
+h2{
+    text-transform: uppercase;
+}
